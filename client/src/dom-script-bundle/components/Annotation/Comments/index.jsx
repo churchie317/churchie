@@ -13,12 +13,13 @@ class Comments extends React.Component {
         { this.props.commments.map((comment, index) =>
           <Comment key={JSON.stringify(comment) + index} comment={comment} />,
         ) }
-      </ul>);
+      </ul>
+    );
   }
 }
 
-// Comments.propTypes = {
-//   commments: React.propTypes.object.isRequired,
-// };
+Comments.propTypes = {
+  commments: React.propTypes.string.isRequired,
+};
 
 export default Comments;
